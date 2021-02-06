@@ -2,14 +2,14 @@
 class Cue < Formula
   desc "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   homepage "https://github.com/cuelang/cue"
-  version "0.3.0-beta.3"
+  version "0.3.0-beta.4"
 
   if OS.mac?
-    url "https://github.com/cuelang/cue/releases/download/v0.3.0-beta.3/cue_0.3.0-beta.3_Darwin_x86_64.tar.gz"
-    sha256 "b15779a6fb3112a52ae0f99ba84a136ae859caaccc540447a30bf257e2670c6a"
+    url "https://github.com/cuelang/cue/releases/download/v0.3.0-beta.4/cue_0.3.0-beta.4_Darwin_x86_64.tar.gz"
+    sha256 "cdbc2d9b0ae42f9f458ef72cfdceee1791420fa780a46d14b53f36f6554d1ff3"
   elsif OS.linux?
-    url "https://github.com/cuelang/cue/releases/download/v0.3.0-beta.3/cue_0.3.0-beta.3_Linux_x86_64.tar.gz"
-    sha256 "3a55f5ab134d39df9ef977e07a544d6db03f21898c02b16607090e90fc01b5eb"
+    url "https://github.com/cuelang/cue/releases/download/v0.3.0-beta.4/cue_0.3.0-beta.4_Linux_x86_64.tar.gz"
+    sha256 "b788f219a20f6bbb3f54923d164ce44052bbf4b903398def677114ae014efb61"
   end
 
   def install
