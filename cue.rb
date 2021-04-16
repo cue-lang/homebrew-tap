@@ -5,20 +5,20 @@
 class Cue < Formula
   desc "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   homepage "https://github.com/cuelang/cue"
-  version "0.3.2"
+  version "0.4.0-alpha.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cuelang/cue/releases/download/v0.3.2/cue_v0.3.2_darwin_amd64.tar.gz"
-    sha256 "b9a3fb15f9c52ce3d83c3696a675463b3cf203f75d94467378bf4987826396cd"
+    url "https://github.com/cuelang/cue/releases/download/v0.4.0-alpha.1/cue_v0.4.0-alpha.1_darwin_amd64.tar.gz"
+    sha256 "06d25f8f53ee6f9214a5fbb200f1d24c478dd4c2c0634dac3372b7d61baa67f4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/cuelang/cue/releases/download/v0.3.2/cue_v0.3.2_linux_amd64.tar.gz"
-    sha256 "c80da4c9439e633e293fcebf840d082048cb0a79faa61aa55e6edf13d8e7d4d5"
+    url "https://github.com/cuelang/cue/releases/download/v0.4.0-alpha.1/cue_v0.4.0-alpha.1_linux_amd64.tar.gz"
+    sha256 "9903f10fa1e9dfc3c32918a5734cca35bc78135778fef00384210bfe1cbbc00a"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/cuelang/cue/releases/download/v0.3.2/cue_v0.3.2_linux_arm64.tar.gz"
-    sha256 "a4f900c4640f67b49a55769adc9da1943193ce196181072d1f28e79e6ee48a32"
+    url "https://github.com/cuelang/cue/releases/download/v0.4.0-alpha.1/cue_v0.4.0-alpha.1_linux_arm64.tar.gz"
+    sha256 "0cd98cb2017cc7fae61fd6a80c39a957191f299d930a424f08f21ee02478ab35"
   end
 
   def install
