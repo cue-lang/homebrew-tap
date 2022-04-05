@@ -5,20 +5,20 @@
 class Cue < Formula
   desc "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   homepage "https://cuelang.org"
-  version "0.4.3-beta.1"
+  version "0.4.3-beta.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.1/cue_v0.4.3-beta.1_darwin_amd64.tar.gz"
-      sha256 "5397ed54f03b1a27b199840b7e73fd9d90e0fa7018c48ec51963be7f49d561a7"
+      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.2/cue_v0.4.3-beta.2_darwin_amd64.tar.gz"
+      sha256 "be4472e3607d03bdc31ecb144f33df1afda05f2e2323b754762029cdf490aab7"
 
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.1/cue_v0.4.3-beta.1_darwin_arm64.tar.gz"
-      sha256 "492fcdf6ee7cb98ea57f0c5dd681b03a1604a14f797640d4165a7367647111bc"
+      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.2/cue_v0.4.3-beta.2_darwin_arm64.tar.gz"
+      sha256 "61ccbdb4151a9f847329e7ff95247810855c69f5c69b425fe707c20ace03b3c8"
 
       def install
         bin.install "cue"
@@ -27,17 +27,17 @@ class Cue < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.1/cue_v0.4.3-beta.1_linux_arm64.tar.gz"
-      sha256 "78da41c02414bb700b671b51e8847741b90ebd770873a24b5599296dea956a7b"
+    if Hardware::CPU.intel?
+      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.2/cue_v0.4.3-beta.2_linux_amd64.tar.gz"
+      sha256 "78a6517321d5bc249bceff67cfc112c8236a510f70c1af83d207b31997d9f444"
 
       def install
         bin.install "cue"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.1/cue_v0.4.3-beta.1_linux_amd64.tar.gz"
-      sha256 "7ce54d498f1e9fe8ef28ac3db0e436404fdc9027b55c3482cf865b658cfe395b"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/cue-lang/cue/releases/download/v0.4.3-beta.2/cue_v0.4.3-beta.2_linux_arm64.tar.gz"
+      sha256 "35e8bae1bcc45a97986b10b79ec9682c039a36b419e0e4b01b4b354695a0421b"
 
       def install
         bin.install "cue"
