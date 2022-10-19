@@ -8,17 +8,17 @@ class Cue < Formula
   version "0.5.0-alpha.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "aae39366484152165ed9488fbfe69299db7b2e4aa3baf7758d34c370b428a0e0"
+    if Hardware::CPU.arm?
+      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_darwin_arm64.tar.gz"
+      sha256 "64d86572560e60cf3bee266af26837171647250549c3cc27ceacaad7ff01018f"
 
       def install
         bin.install "cue"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "34fa67593b473e14e2d3c61e24997ee8b0492a7d40993850507fdc4838dc3fc9"
+    if Hardware::CPU.intel?
+      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_darwin_amd64.tar.gz"
+      sha256 "553aceb95f5989a15578ab2624314f441f466d1bddad21f69006d29e1f435b1b"
 
       def install
         bin.install "cue"
@@ -29,7 +29,7 @@ class Cue < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "1a2ac7a48d88902238fc3cc4fc9d0d542379927816f0c6e1e83dbf5de99ba89e"
+      sha256 "f88a1b391c1646f19415047953fffef9699dc6b0a26a85971f4782d05889c2e0"
 
       def install
         bin.install "cue"
@@ -37,7 +37,7 @@ class Cue < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_linux_amd64.tar.gz"
-      sha256 "37e00d21f3fba2de0e57c664d476daf2379f6f1c5a049175bf29fe4a89856d83"
+      sha256 "653c4558dedc676bf43a371bb02d798fbb43fe3f892253ba387e513052520b81"
 
       def install
         bin.install "cue"
