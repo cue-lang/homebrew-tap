@@ -5,20 +5,20 @@
 class Cue < Formula
   desc "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   homepage "https://cuelang.org"
-  version "0.5.0-alpha.1"
+  version "0.5.0-beta.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "64d86572560e60cf3bee266af26837171647250549c3cc27ceacaad7ff01018f"
+      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-beta.1/cue_v0.5.0-beta.1_darwin_arm64.tar.gz"
+      sha256 "9fa583fcdd45e4f446388aca1f50acc213c2186fe0491e21448051eed0d2b2a2"
 
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "553aceb95f5989a15578ab2624314f441f466d1bddad21f69006d29e1f435b1b"
+      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-beta.1/cue_v0.5.0-beta.1_darwin_amd64.tar.gz"
+      sha256 "936dedc7f1630821956bae5d8aab7b0f0c5c63ea56d329c5030b59fb2613b0cd"
 
       def install
         bin.install "cue"
@@ -28,16 +28,16 @@ class Cue < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "f88a1b391c1646f19415047953fffef9699dc6b0a26a85971f4782d05889c2e0"
+      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-beta.1/cue_v0.5.0-beta.1_linux_arm64.tar.gz"
+      sha256 "4d9c36b4b491ba4a4bf851eda384402bd98e4ba0b54aeccedc51067644a43848"
 
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-alpha.1/cue_v0.5.0-alpha.1_linux_amd64.tar.gz"
-      sha256 "653c4558dedc676bf43a371bb02d798fbb43fe3f892253ba387e513052520b81"
+      url "https://github.com/cue-lang/cue/releases/download/v0.5.0-beta.1/cue_v0.5.0-beta.1_linux_amd64.tar.gz"
+      sha256 "8fba35aa3aaa9ab7ec012f6522d006125168605c24fe93e14f6aec5789f99df0"
 
       def install
         bin.install "cue"
