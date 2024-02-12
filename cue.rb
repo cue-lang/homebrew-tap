@@ -5,20 +5,20 @@
 class Cue < Formula
   desc "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   homepage "https://cuelang.org"
-  version "0.7.0"
+  version "0.7.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cue-lang/cue/releases/download/v0.7.0/cue_v0.7.0_darwin_arm64.tar.gz"
-      sha256 "0b10652945f13a3ccc732855ac24401cd868d64eb6f4f839141ddd93c63d255e"
+      url "https://github.com/cue-lang/cue/releases/download/v0.7.1/cue_v0.7.1_darwin_arm64.tar.gz"
+      sha256 "a163cc7c33adeeb6c3799c9ec20b8c6a36ffe267453301eaef996f717178ac08"
 
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.7.0/cue_v0.7.0_darwin_amd64.tar.gz"
-      sha256 "b86efef83abe1b0c90a3cf47a490cd6de5c884d0865ad3463f539b0346a39c8b"
+      url "https://github.com/cue-lang/cue/releases/download/v0.7.1/cue_v0.7.1_darwin_amd64.tar.gz"
+      sha256 "8bc701670dfd72d009239605c45973dfd95b7bdaaf55b5eb923c1909058b09e4"
 
       def install
         bin.install "cue"
@@ -28,16 +28,16 @@ class Cue < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cue-lang/cue/releases/download/v0.7.0/cue_v0.7.0_linux_arm64.tar.gz"
-      sha256 "8cf589790f806f7a077197d462e71040c8417d1814a1f469e473c468121e823a"
+      url "https://github.com/cue-lang/cue/releases/download/v0.7.1/cue_v0.7.1_linux_arm64.tar.gz"
+      sha256 "6be1cf9ab36baa62466056bbbc1c3ffe259522fd0c35ea196ad10463eab29f75"
 
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.7.0/cue_v0.7.0_linux_amd64.tar.gz"
-      sha256 "6a4306155cbf3f6d89740464dc0921bbaac74b27236a05a92e30cbb5f248d33b"
+      url "https://github.com/cue-lang/cue/releases/download/v0.7.1/cue_v0.7.1_linux_amd64.tar.gz"
+      sha256 "dbd548ff02567881cf81834d0e9e035c86a287c887587b9abfd119763ebb9aea"
 
       def install
         bin.install "cue"
