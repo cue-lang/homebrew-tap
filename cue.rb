@@ -5,20 +5,20 @@
 class Cue < Formula
   desc "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   homepage "https://cuelang.org"
-  version "0.15.2"
+  version "0.15.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cue-lang/cue/releases/download/v0.15.2/cue_v0.15.2_darwin_amd64.tar.gz"
-      sha256 "cfb801bb062727f24858e412af8ab85878120a08ab3d82f76fb329e558369e21"
+      url "https://github.com/cue-lang/cue/releases/download/v0.15.3/cue_v0.15.3_darwin_amd64.tar.gz"
+      sha256 "44f177363bb59453371d9bf3dd2097c6bd7fc0fccb2eaf2cfde8bc934c8ba174"
 
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cue-lang/cue/releases/download/v0.15.2/cue_v0.15.2_darwin_arm64.tar.gz"
-      sha256 "fcde84963256959f0ef34ebc7b16afbc685997a728f1620e57a1eaaf7fc8a76e"
+      url "https://github.com/cue-lang/cue/releases/download/v0.15.3/cue_v0.15.3_darwin_arm64.tar.gz"
+      sha256 "9b84bbd0ef1050b51328e4d9af47b2e88c772765d5c74594277417a4bc083a68"
 
       def install
         bin.install "cue"
@@ -28,15 +28,15 @@ class Cue < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cue-lang/cue/releases/download/v0.15.2/cue_v0.15.2_linux_amd64.tar.gz"
-      sha256 "f8d69592a224b6614b254c3b222c7206b04270d6c77710af4ad28e86886ffc46"
+      url "https://github.com/cue-lang/cue/releases/download/v0.15.3/cue_v0.15.3_linux_amd64.tar.gz"
+      sha256 "309bbe62ebb0e74a2b298d2808edb0eadfd19789ed0de259b61721f19e3b5ff0"
       def install
         bin.install "cue"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cue-lang/cue/releases/download/v0.15.2/cue_v0.15.2_linux_arm64.tar.gz"
-      sha256 "b1911e4048e25b3fe0758b0bcdef2c7db72bba8c8aa0eb639fb280952e70dcd5"
+      url "https://github.com/cue-lang/cue/releases/download/v0.15.3/cue_v0.15.3_linux_arm64.tar.gz"
+      sha256 "db9e6b15d02f838c47b65e4c5184caf8456e389be28a274f5186e19fab335015"
       def install
         bin.install "cue"
       end
