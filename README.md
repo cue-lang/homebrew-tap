@@ -14,8 +14,8 @@ Homebrew's formula automatically. If it did not, reinstall it:
 brew uninstall cue && brew install cue
 ```
 
-`cue-prerelease` is deprecated and will be removed. Until then it
-installs the latest release. Replace it with Homebrew's `cue` formula:
+`cue-prerelease` has been removed. Replace an existing installation with
+Homebrew's `cue` formula:
 
 ```
 brew uninstall cue-prerelease && brew reinstall cue
